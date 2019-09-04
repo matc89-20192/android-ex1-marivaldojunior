@@ -5,9 +5,48 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context="matc89.exercicio1.MainActivity">
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="Hello World!" app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCumprimentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clicou"
+        android:text="Cumprimentar"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/editNome"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/editNome"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+    <TextView
+        android:id="@+id/labelMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Ola mundo"
+        app:layout_constraintLeft_toLeftOf="@+id/btnCumprimentar"
+        app:layout_constraintRight_toRightOf="@+id/btnCumprimentar"
+        app:layout_constraintTop_toBottomOf="@+id/btnCumprimentar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.234" />
 
 </android.support.constraint.ConstraintLayout>
