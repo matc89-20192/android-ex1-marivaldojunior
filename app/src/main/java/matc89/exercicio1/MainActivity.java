@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         editNome.setText(texto);
     }
     public void clicou(View v) {
-        String textoDigitado = editNome.getText().toString();
+        String textoDigitado = "Alô," + editNome.getText().toString();
         labelMensagem.setText(textoDigitado);
     }
     @Override
